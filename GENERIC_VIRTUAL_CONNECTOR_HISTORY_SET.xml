@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DMSScript options="272" xmlns="http://www.skyline.be/automation">
+	<Name>GENERIC_VIRTUAL_CONNECTOR_HISTORY_SET</Name>
+	<Description></Description>
+	<Type>Automation</Type>
+	<Author>SKYLINE2\GBO</Author>
+	<CheckSets>FALSE</CheckSets>
+	<Folder></Folder>
+
+	<Protocols>
+	</Protocols>
+
+	<Memory>
+	</Memory>
+
+	<Parameters>
+		<ScriptParameter id="2" type="string" values="">
+			<Description>DMA ID</Description>
+		</ScriptParameter>
+		<ScriptParameter id="3" type="string" values="">
+			<Description>Element ID</Description>
+		</ScriptParameter>
+		<ScriptParameter id="4" type="string" values="">
+			<Description>Primary Key</Description>
+		</ScriptParameter>
+		<ScriptParameter id="5" type="string" values="">
+			<Description>Numeric Values Range (I.E. 5-60)</Description>
+		</ScriptParameter>
+		<ScriptParameter id="6" type="string" values="">
+			<Description>Percentage Values Maximum</Description>
+		</ScriptParameter>
+		<ScriptParameter id="7" type="string" values="">
+			<Description>History Set Timespan (In days)</Description>
+		</ScriptParameter>
+		<ScriptParameter id="8" type="string" values="">
+			<Description>History Set Interval (In minutes)</Description>
+		</ScriptParameter>
+	</Parameters>
+
+	<Script>
+		<Exe id="1" type="csharp">
+			<Value><![CDATA[[Project:GENERIC_VIRTUAL_CONNECTOR_HISTORY_SET_1]]]></Value>
+			<!--<Param type="debug">true</Param>-->
+			<Message></Message>
+		</Exe>
+	</Script>
+</DMSScript>
