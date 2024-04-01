@@ -141,6 +141,11 @@ namespace GENERIC_VIRTUAL_CONNECTOR_HISTORY_SET_1
 
 			PercentageRangeMaximum = Convert.ToDouble(engine.GetScriptParam(6).Value, CultureInfo.InvariantCulture);
 
+			if(PercentageRangeMaximum > 100)
+			{
+				PercentageRangeMaximum = 100;
+			}
+
 			HistoryTimespan = historyTimespan;
 			HistoryInterval = historyInterval;
         }
